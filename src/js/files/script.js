@@ -30,4 +30,21 @@ function pageLoad() {
 
         });
     }
+
+    ////////
+
+    const progresBars = document.querySelectorAll('[data-progres]')
+
+    if (progresBars) {
+        progresBars.forEach(progresBar => {
+            const progresBarValue = Number(progresBar.getAttribute("data-progres"))
+            const progresBarLine = progresBar.querySelector('[data-progres-line]')
+
+            if (progresBarValue < 10 || progresBarValue > 80) {
+                progresBarLine.classList.add("top-position")
+            }
+
+        });
+    }
+
 }
