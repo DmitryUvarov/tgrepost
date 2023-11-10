@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Категории"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="category">
+				<div class="category__container">
+					<div class="category__body">
+						<h1 class="category__title title">Категории</h1>
+						<div class="category__items">
+							<a href="#" class="category__item">
+								<p>Самый активный министр</p>
+							</a>
+							<a href="#" class="category__item">
+								<p>Самый активный хоким области</p>
+							</a>
+							<a href="#" class="category__item">
+								<p>Самая активная политическая партия</p>
+							</a>
+							<a href="#" class="category__item">
+								<p>Самый активный хоким района Ташкента</p>
+							</a>
+						</div>
+						<div class="category__banner">
+							<div class="category__banner-text">Голосуя за определенного кандидата вы сможете дать оценку его работе, показать удовлетворенность его деятельностью на своем посту!</div>
+							<div class="category__banner-img"><img src="@img/category/rate.png" alt=""></div>
+							<div class="category__banner-bg"><img src="@img/category/uz.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

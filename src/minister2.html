@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Самый активный министр"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="minister">
+                <div class="minister__container">
+                    <div class="minister__body">
+                        <div class="minister__image-ibg--contain"><img src="@img/minister/01.png" alt=""></div>
+                        <h1 class="minister__maintitle title">Кудратов Лазиз Шавкатович</h1>
+
+                        <div class="minister__text text">Министр инвестиций, промышленности и торговли</div>
+
+                        <div class="minister__circles">
+                            <div data-circle class="minister__circle minister__circle_green">
+                                <svg>
+                                    <circle cx="47" cy="47" r="47"></circle>
+                                    <circle data-circle-round cx="47" cy="47" r="47"></circle>
+                                </svg>
+                                <div class="minister__circle-percentage" data-symbol="%">30</div>
+                            </div>
+                            <div data-circle class="minister__circle minister__circle_red">
+                                <svg>
+                                    <circle cx="47" cy="47" r="47"></circle>
+                                    <circle data-circle-round cx="47" cy="47" r="47"></circle>
+                                </svg>
+                                <div class="minister__circle-percentage" data-symbol="%">50</div>
+                            </div>
+                        </div>
+                        <!-- просто цифру выводищь и всё 0-100 -->
+
+                        <div class="minister__info">
+                            <div class="minister__title-2">Информация:</div>
+                            <div class="minister__text text text_big">Экслюзивный рейтинг государственных служащих, составленный Repost.uz на основе честного и объективного голосования граждан со всех уголков Узбекистана.</div>
+                        </div>
+
+                        <div class="minister__title-1">Проголосовать:</div>
+
+                        <form action="#" class="minister__form">
+                            <div class="radio">
+                                <input id="c_1" class="radio__input" type="radio" value="За" name="golos">
+                                <label for="c_1" class="radio__label radio__label_like _icon-like">За</label>
+                                <!-- <label for="c_1" class="radio__label radio__label_like checked _icon-like">За</label> -->
+                            </div>
+                            <div class="radio">
+                                <input id="c_2" class="radio__input" type="radio" value="Нейтрально" name="golos">
+                                <label for="c_2" class="radio__label">Нейтрально</label>
+                                <!-- <label for="c_2" class="radio__label checked">Нейтрально</label> -->
+                            </div>
+                            <div class="radio">
+                                <input id="c_3" class="radio__input" type="radio" value="Против" name="golos">
+                                <label for="c_3" class="radio__label radio__label_dislike _icon-dislike">Против</label>
+                                <!-- <label for="c_3" class="radio__label radio__label_dislike checked _icon-dislike">Против</label> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
